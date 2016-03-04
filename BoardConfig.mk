@@ -17,9 +17,9 @@
 # Product-specific compile-time definitions.
 #
 # inherit from the proprietary version
--include vendor/huawei/y550/BoardConfigVendor.mk
+-include vendor/huawei/y635/BoardConfigVendor.mk
 
-LOCAL_PATH := device/huawei/y550
+LOCAL_PATH := device/huawei/y635
 
 # DPM NSRM Feature
 TARGET_LDPRELOAD := libNimsWrap.so
@@ -63,7 +63,7 @@ BOARD_USES_LEGACY_MMAP := true
 TARGET_USE_VENDOR_CAMERA_EXT := true
 
 # CMHW
-BOARD_HARDWARE_CLASS := device/huawei/y550/cmhw
+BOARD_HARDWARE_CLASS := device/huawei/y635/cmhw
 
 # Enables CSVT
 TARGET_USES_CSVT := true
@@ -115,8 +115,8 @@ BOARD_KERNEL_PAGESIZE    := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8916
-TARGET_KERNEL_CONFIG := y550_defconfig
-TARGET_SELINUX_CONFIG := y550_defconfig
+TARGET_KERNEL_CONFIG := y635_defconfig
+TARGET_SELINUX_CONFIG := y635_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 
 # Partitions
@@ -165,7 +165,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/huawei/y550/sepolicy
+    device/huawei/y635/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     bootanim.te \
@@ -184,7 +184,7 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 MALLOC_IMPL := dlmalloc
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := y550,Y550,hwy550,hwY550,y550-L01
+TARGET_OTA_ASSERT_DEVICE := y635,Y635,hwy635,hwY635,y635-l01
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
