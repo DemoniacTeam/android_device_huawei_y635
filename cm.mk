@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/huawei/y550/full_y550.mk)
+$(call inherit-product, device/huawei/y635/full_y635.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 854
@@ -21,5 +21,5 @@ TARGET_SCREEN_WIDTH := 480
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_y550
-PRODUCT_DEVICE := y550
+PRODUCT_NAME := cm_y635
+PRODUCT_DEVICE := y635
