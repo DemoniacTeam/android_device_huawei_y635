@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/y550.mk
+	$(LOCAL_DIR)/y635.mk
